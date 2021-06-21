@@ -370,4 +370,15 @@ console.log("49 ->"), numbToString(49)
 Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
 */
 
-const findAcronym = function()
+let arrAcronym = [] 
+const findAcronym = function(phrase){
+    let arrPhrase = phrase.split(" ")
+    for(let i=0; i< arrPhrase.length; i++){
+        let firstLetter = arrPhrase[i].split("")[0]
+        arrAcronym.push(firstLetter)
+    }
+    let acronym = arrAcronym.join("")
+    console.log("Ex 19:", acronym)
+}
+
+findAcronym("Strive School Student")
