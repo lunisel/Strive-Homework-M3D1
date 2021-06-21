@@ -348,7 +348,26 @@ this would be a "DiegoRiccardo".
 34 has four factors: 1, 2, 17, and 34.
 this would be "34". */
 
+const numbToString = function(n){
+    for(let i=1; i<=n; i++){
+        if(n % i === 0){
+            if (i === 3){
+                console.log("Diego")
+            } if (i === 5){
+                console.log("Riccardo")
+            } if (i === 7){
+                console.log("Stefano")
+            }
+        }
+    }
+}
+console.log("Ex 18:")
+console.log("30 ->"), numbToString(30)
+console.log("49 ->"), numbToString(49)
+
 /*
 19)
 Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
 */
+
+const findAcronym = function()
