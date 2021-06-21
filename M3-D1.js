@@ -321,7 +321,17 @@ lowerAndUpper("Sun")
 /* 17)
 Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80. */
 
+const sumEx17 = function(n1,n2){
+    let sum = n1 + n2
+    if((sum > 50) && (sum < 80)){
+        return 65
+    } else {
+        return 80
+    }
+}
 
+console.log("Ex 17: ",sumEx17(35,40))
+console.log("Ex 17: ",sumEx17(40,70))
 
 /* 18)
 Create a function to convert a number to a string, the contents of which depend on the number's factors. Follow next example:
